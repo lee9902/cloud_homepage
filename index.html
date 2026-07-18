@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 글로벌 프로젝트 - 테스트 페이지</title>
+    <style>
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ecf0f1;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚀 글로벌 프로젝트 테스트</h1>
+        <p>Cloudflare Pages + GitHub 자동 배포 테스트용 메인 페이지입니다.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 프로젝트 소개 섹션 -->
+        <div class="card">
+            <h2>📌 프로젝트 개요</h2>
+            <p>이 페이지는 배포 파이프라인(Git -> GitHub -> Cloudflare Pages)이 정상적으로 작동하는지 확인하기 위한 테스트 파일입니다.</p>
+            <p>아래와 같은 기능들을 순차적으로 연동할 예정입니다:</p>
+            <ul>
+                <li><strong>AI 모델:</strong> Teachable Machine (동물상 테스트 등)</li>
+                <li><strong>수익화:</strong> Google AdSense, Stripe/Polar 글로벌 결제</li>
+                <li><strong>고객 소통:</strong> Disqus(댓글), Formspree(문의폼)</li>
+            </ul>
+        </div>
+
+        <!-- 테스트 버튼 섹션 -->
+        <div class="card">
+            <h2>🛠️ 기능 테스트 영역</h2>
+            <p>나중에 API나 백엔드 기능이 추가될 자리입니다.</p>
+            <button class="btn" onclick="alert('동물상 테스트 기능은 준비 중입니다!')">동물상 테스트 해보기</button>
+            <button class="btn" style="background:#e74c3c;" onclick="alert('로또 추첨기 기능은 준비 중입니다!')">로또 추첨기 실행</button>
+        </div>
+
+        <!-- Formspree 폼 테스트 영역 (UI만) -->
+        <div class="card">
+            <h2>✉️ 문의하기 (Formspree 예정)</h2>
+            <p>Formspree와 연동하여 백엔드 없이 이메일을 받을 수 있는 폼입니다.</p>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="이메일 주소" style="width:100%; padding:10px; margin-bottom:10px; box-sizing:border-box;">
+                <textarea name="message" placeholder="메시지를 입력하세요" rows="4" style="width:100%; padding:10px; margin-bottom:10px; box-sizing:border-box;"></textarea>
+                <button type="button" class="btn" onclick="alert('Formspree 주소가 연결되면 작동합니다.')">보내기 (테스트)</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 나의 글로벌 프로젝트. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
